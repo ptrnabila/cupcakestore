@@ -1,0 +1,75 @@
+<!DOCTYPE html>
+<html lang="id">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Pemesanan | Toko Cupcake Putri Nabila</title>
+  <link rel="stylesheet" href="style.css" />
+  <script defer src="script.js"></script>
+</head>
+<body>
+  <header>
+    <div class="logo">
+      <img src="assets/logo.png" alt="Logo Cupcake" />
+      <h1>Putri Nabila Cupcakes</h1>
+    </div>
+    <nav>
+      <a href="index.html">Home</a>
+      <a href="about.html">About</a>
+      <a href="profile.html">Profile</a>
+      <a href="produk.html">Produk</a>
+      <a href="galery.html">Galery</a>
+      <a href="pemesanan.html" class="active">Pemesanan</a>
+      <a href="rating.html">Rating</a>
+      <a href="contact.html">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="content animate-fade">
+      <h2>Form Pemesanan</h2>
+      <form class="form-pemesanan">
+        <label for="nama">Nama Lengkap:</label>
+        <input type="text" id="nama" name="nama" required />
+
+        <label for="email">Email:</label>
+        <input type="email" id="email" name="email" required />
+
+        <label for="produk">Pilih Produk:</label>
+        <select id="produk" name="produk">
+          <option value="choco">Choco Dream</option>
+          <option value="vanilla">Vanilla Bliss</option>
+          <option value="strawberry">Strawberry Kiss</option>
+          <option value="matcha">Matcha Mint</option>
+          <option value="oreo">Oreo Crunch</option>
+          <option value="caramel">Caramel Love</option>
+          <option value="lemon">Lemon Zest</option>
+          <option value="banana">Banana Bomb</option>
+          <option value="coffee">Coffee Rush</option>
+          <option value="redvelvet">Red Velvet Crush</option>
+        </select>
+        
+
+        <label for="jumlah">Jumlah:</label>
+        <input type="number" id="jumlah" name="jumlah" min="1" required />
+
+        <label for="catatan">Catatan Tambahan:</label>
+        <textarea id="catatan" name="catatan"></textarea>
+
+        <div class="keranjang">
+          <h3>Keranjang Pemesanan</h3>
+          <ul id="daftar-keranjang"></ul>
+        </div>
+        
+        <button type="button" id="tambahKeranjang">Tambah ke Keranjang</button>
+        <button type="submit">Pesan Sekarang</button>
+
+      </form>
+    </section>
+  </main>
+
+  <footer>
+    <p>&copy; 2025 Toko Cupcake Putri Nabila</p>
+  </footer>
+</body>
+</html>
